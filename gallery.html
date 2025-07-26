@@ -174,23 +174,6 @@
 </section>
 
 
-<!-- Modal for full image preview -->
-<div id="imageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 hidden">
-  <span class="absolute top-4 right-6 text-white text-4xl cursor-pointer" onclick="closeModal()">&times;</span>
-  <img id="modalImage" class="max-h-[90%] max-w-[90%] rounded shadow-lg" />
-</div>
-
-<script>
-  function openModal(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").classList.remove("hidden");
-  }
-
-  function closeModal() {
-    document.getElementById("imageModal").classList.add("hidden");
-  }
-</script>
-
 
   <!-- CTA -->
   <div class="text-center py-12" data-aos="fade-up">
