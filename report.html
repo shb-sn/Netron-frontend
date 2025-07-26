@@ -116,13 +116,13 @@
      class="absolute top-16 right-4 bg-white dark:bg-gray-900 text-sm rounded shadow-lg hidden md:hidden w-60 p-4 space-y-3 z-50"
      data-aos="fade-down"
      data-aos-duration="600">
-  <a href="home.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Home</a>
-  <a href="dashboard.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Dashboard</a>
-  <a href="features.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Features</a>
-  <a href="gallery.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Gallery</a>
-  <a href="team.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Team</a>
-  <a href="report.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Report</a>
-  <a href="contact.html" class="text py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Contact</a>
+  <a href="home.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Home</a>
+  <a href="dashboard.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Dashboard</a>
+  <a href="features.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Features</a>
+  <a href="gallery.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Gallery</a>
+  <a href="team.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Team</a>
+  <a href="report.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Report</a>
+  <a href="contact.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Contact</a>
 </div>
 
 </header>
@@ -132,7 +132,7 @@
     <h2 class="text-5xl font-bold text-blue-600 dark:text-blue-300 mb-4">Project Report & Insights</h2>
     <p class="text-lg max-w-xl mx-auto">Dive deep into the technical, operational, and design journey of NetrOn.</p>
     <div class="mt-4">
-      <a href="https://raw.githubusercontent.com/shb-sn/NetrOn-Smart-vehicle-health-guardian/main/report/NetrOn_report.pdf" download class="inline-text px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">📄 Download Full Report (PDF)</a>
+      <a href="https://raw.githubusercontent.com/shb-sn/NetrOn-Smart-vehicle-health-guardian/main/report/NetrOn_report.pdf" download class="inline-block px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">📄 Download Full Report (PDF)</a>
     </div>
   </section>
 
@@ -159,26 +159,30 @@
   </div>
 
   <!-- Key Metrics Section -->
-  <div class="p-6 glass my-6" data-aos="fade-up" data-aos-delay="300">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Key Metrics</h3>
-    <div class="space-y-3 text-sm">
-      <div>
-        <p class="font-semibold text-blue-700 dark:text-blue-300">Temperature:</p>
-        <span class="inline-text bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2">Normal: 28–32°C</span>
-        <span class="inline-text bg-red-100 text-red-800 px-2 py-1 rounded-full">Alert: &gt;60°C</span>
-      </div>
-      <div>
-        <p class="font-semibold text-blue-700 dark:text-blue-300">Vibration:</p>
-        <span class="inline-text bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2">Normal: 8–9 units</span>
-        <span class="inline-text bg-red-100 text-red-800 px-2 py-1 rounded-full">Alert: &gt;30 units</span>
-      </div>
-      <div>
-        <p class="font-semibold text-blue-700 dark:text-blue-300">Battery Voltage:</p>
-        <span class="inline-text bg-green-100 text-green-800 px-2 py-1 rounded-full mr-2">Normal: 7–9V</span>
-        <span class="inline-text bg-red-100 text-red-800 px-2 py-1 rounded-full">Alert: &lt;4.5V</span>
-      </div>
+  <div class="p-6 glass my-6" data-aos="fade-up">
+  <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Key Metrics</h3>
+  <div class="space-y-4 text-sm">
+    <!-- Temperature -->
+    <div>
+      <p class="font-semibold text-grey-500 dark:text-grey-300 mb-1">Temperature:</p>
+      <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs mr-2">Normal: 28–32°C</span>
+      <span class="inline-block bg-rose-100 text-rose-800 px-3 py-1 rounded-full text-xs">Alert: &gt;60°C</span>
+    </div>
+    <!-- Vibration -->
+    <div>
+      <p class="font-semibold text-grey-500 dark:text-grey-300 mb-1">Vibration:</p>
+      <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs mr-2">Normal: 8–9 units</span>
+      <span class="inline-block bg-rose-100 text-rose-800 px-3 py-1 rounded-full text-xs">Alert: &gt;30 units</span>
+    </div>
+    <!-- Voltage -->
+    <div>
+      <p class="font-semibold text-grey-500 dark:text-grey-300 mb-1">Battery Voltage:</p>
+      <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs mr-2">Normal: 7–9V</span>
+      <span class="inline-block bg-rose-100 text-rose-800 px-3 py-1 rounded-full text-xs">Alert: &lt;4.5V</span>
     </div>
   </div>
+</div>
+
 
   <!-- Implementation -->
   <div class="p-6 glass md:col-span-2" data-aos="fade-up" data-aos-delay="400">
@@ -202,7 +206,7 @@
   <h3 class="text-3xl font-bold mb-4 text-blue-700 dark:text-blue-400">Budget Breakdown</h3>
 
   <!-- Desktop Table -->
-  <div class="hidden md:text p-6 glass" data-aos="fade-up">
+  <div class="hidden md:block p-6 glass" data-aos="fade-up">
     <table class="table-auto w-full text-sm">
       <thead>
         <tr class="bg-blue-200 dark:bg-gray-700">
