@@ -70,7 +70,7 @@
 <body class="bg-gradient-to-br from-blue-100 to-white dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white transition-colors duration-500">
 
 
-  <header class="w-full py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50 bg-white dark:bg-gray-800">
+  <header class="w-full py-4 px-6 flex justify-between items-center sticky top-0 z-50 glass text-gray-800 dark:text-white bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-white/20">
   <div class="flex items-center gap-2">
     <!-- Logo -->
     <svg class="logo light-mode-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
@@ -89,43 +89,43 @@
   </div>
 
   <!-- Desktop Navigation -->
-  <nav class="space-x-2 text-sm hidden md:block">
-    <a href="home.html" class="hover:text-blue-500">Home</a>
-    <a href="dashboard.html" class="hover:text-blue-500 underline">Dashboard</a>
-    <a href="features.html" class="hover:text-blue-500">Features</a>
-    <a href="gallery.html" class="hover:text-blue-500">Gallery</a>
-    <a href="team.html" class="hover:text-blue-500">Team</a>
-    <a href="report.html" class="hover:text-blue-500">Report</a>
-    <a href="contact.html" class="hover:text-blue-500">Contact</a>
-  </nav>
+  <nav class="space-x-6 text-base hidden md:flex font-medium" data-aos="fade-down" data-aos-duration="500">
+  <a href="home.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Home</a>
+  <a href="dashboard.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Dashboard</a>
+  <a href="features.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Features</a>
+  <a href="gallery.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Gallery</a>
+  <a href="team.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Team</a>
+  <a href="report.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Report</a>
+  <a href="contact.html" class="px-3 py-2 rounded hover:bg-blue-100 dark:hover:bg-gray-700 hover:text-blue-700 transition">Contact</a>
+</nav>
+
 
   <!-- Right Side Buttons -->
-  <div class="flex items-center gap-3">
-    <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" class="px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-600 text-sm">Toggle Theme</button>
+<div class="flex items-center gap-3">
+  <!-- Theme Toggle -->
+  <button onclick="toggleTheme()" class="px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-600 text-sm">Toggle Theme</button>
 
-    <!-- Mobile Menu Toggle -->
-    <button onclick="toggleMobileMenu()" class="md:hidden focus:outline-none text-2xl">
-      ☰
-    </button>
-  </div>
+  <!-- Mobile Menu Toggle -->
+  <button onclick="toggleMobileMenu()" class="md:hidden focus:outline-none text-2xl">
+    ☰
+  </button>
+</div>
 
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobileMenu" class="absolute top-16 right-4 bg-white dark:bg-gray-900 text-sm rounded shadow-lg hidden md:hidden w-48 p-4 space-y-2 z-50" 
-  data-aos="fade-down"
-  data-aos-duration="400"
-  data-aos-easing="ease-in-out">
-    <a href="home.html" class="block hover:text-blue-500">Home</a>
-    <a href="dashboard.html" class="block hover:text-blue-500">Dashboard</a>
-    <a href="features.html" class="block hover:text-blue-500">Features</a>
-    <a href="gallery.html" class="block hover:text-blue-500">Gallery</a>
-    <a href="team.html" class="block hover:text-blue-500">Team</a>
-    <a href="report.html" class="block hover:text-blue-500">Report</a>
-    <a href="contact.html" class="block hover:text-blue-500">Contact</a>
-  </div>
+<!-- Mobile Dropdown Menu with animation and auto-close -->
+<div id="mobileMenu" 
+     class="absolute top-16 right-4 bg-white dark:bg-gray-900 text-sm rounded shadow-lg hidden md:hidden w-60 p-4 space-y-3 z-50"
+     data-aos="fade-down"
+     data-aos-duration="600">
+  <a href="home.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Home</a>
+  <a href="dashboard.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Dashboard</a>
+  <a href="features.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Features</a>
+  <a href="gallery.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Gallery</a>
+  <a href="team.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Team</a>
+  <a href="report.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Report</a>
+  <a href="contact.html" class="block py-2 px-3 rounded hover:bg-blue-100 dark:hover:bg-gray-700" onclick="closeMobileMenu()">Contact</a>
+</div>
+
 </header>
-
-
 
   <!-- Hero -->
   <section class="text-center py-16 px-4" data-aos="fade-up">
@@ -258,9 +258,18 @@
 
 <script>
   function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
   }
+
+  function closeMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.add("hidden");
+  }
+
+  AOS.init({
+    once: true
+  });
 </script>
 
 </body>
