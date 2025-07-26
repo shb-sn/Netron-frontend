@@ -177,50 +177,84 @@
     </div>
   </section>
 
-  <!-- Budget Table -->
-  <section class="max-w-5xl mx-auto px-4 mt-10" data-aos="zoom-in">
-    <h3 class="text-3xl font-bold mb-4 text-blue-700 dark:text-blue-400">Budget Breakdown</h3>
-    <div class="p-6 glass" data-aos="fade-up">
-      <table class="table-auto w-full text-sm">
-        <thead>
-          <tr class="bg-blue-200 dark:bg-gray-700">
-            <th class="px-4 py-2">Tier</th>
-            <th class="px-4 py-2">Features</th>
-            <th class="px-4 py-2">Cost</th>
-            <th class="px-4 py-2">Waterproofing</th>
-            <th class="px-4 py-2">Price</th>
-            <th class="px-4 py-2">Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-white dark:bg-gray-800">
-            <td class="border px-4 py-2">Tier 1: Basic</td>
-            <td class="border px-4 py-2">LM35 + ADXL345 + Voltage Monitoring + LEDs + Bluetooth</td>
-            <td class="border px-4 py-2">₹430</td>
-            <td class="border px-4 py-2">Splashproof case + sealant</td>
-            <td class="border px-4 py-2">₹899</td>
-            <td class="border px-4 py-2">~52%</td>
-          </tr>
-          <tr class="bg-gray-100 dark:bg-gray-700">
-            <td class="border px-4 py-2">Tier 2: Standard</td>
-            <td class="border px-4 py-2">Tier 1 + App UI + Web Dashboard</td>
-            <td class="border px-4 py-2">₹670</td>
-            <td class="border px-4 py-2">Gasket + epoxy sealed project box</td>
-            <td class="border px-4 py-2">₹1399</td>
-            <td class="border px-4 py-2">~52%</td>
-          </tr>
-          <tr class="bg-white dark:bg-gray-800">
-            <td class="border px-4 py-2">Tier 3: Advanced</td>
-            <td class="border px-4 py-2">Tier 2 + Rechargeable Battery + USB + IP54 Enclosure</td>
-            <td class="border px-4 py-2">₹890</td>
-            <td class="border px-4 py-2">Weatherproof sealed case</td>
-            <td class="border px-4 py-2">₹1799</td>
-            <td class="border px-4 py-2">~50%</td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- Budget Breakdown Section -->
+<div class="mt-10 space-y-6" data-aos="fade-up" data-aos-duration="800">
+  <!-- Desktop Table -->
+  <div class="hidden md:block overflow-x-auto">
+    <table class="min-w-full border-collapse text-sm text-left text-gray-700 dark:text-gray-200">
+      <thead class="bg-blue-100 dark:bg-gray-700">
+        <tr>
+          <th class="border px-4 py-2 font-semibold">🔢 Tier</th>
+          <th class="border px-4 py-2 font-semibold">🛠 Features</th>
+          <th class="border px-4 py-2 font-semibold">💰 Estimated Cost</th>
+          <th class="border px-4 py-2 font-semibold">🧰 Waterproofing Method</th>
+          <th class="border px-4 py-2 font-semibold">🏷️ Selling Price</th>
+          <th class="border px-4 py-2 font-semibold">💵 Margin</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="border px-4 py-2">Tier 1: Basic</td>
+          <td class="border px-4 py-2">LM35 + ADXL345 + Voltage Monitoring + LEDs + Bluetooth</td>
+          <td class="border px-4 py-2">₹430</td>
+          <td class="border px-4 py-2">Splashproof box, glue seals, heat shrink</td>
+          <td class="border px-4 py-2">₹899</td>
+          <td class="border px-4 py-2">~52%</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">Tier 2: Standard</td>
+          <td class="border px-4 py-2">Tier 1 + App UI + Dashboard + Stronger case</td>
+          <td class="border px-4 py-2">₹670</td>
+          <td class="border px-4 py-2">Waterproof gaskets, standoffs, epoxy</td>
+          <td class="border px-4 py-2">₹1399</td>
+          <td class="border px-4 py-2">~52%</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">Tier 3: Advanced</td>
+          <td class="border px-4 py-2">Tier 2 + Rechargeable Battery + USB</td>
+          <td class="border px-4 py-2">₹890</td>
+          <td class="border px-4 py-2">IP54+ case, conformal coating</td>
+          <td class="border px-4 py-2">₹1799</td>
+          <td class="border px-4 py-2">~50%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile Cards -->
+  <div class="md:hidden space-y-4">
+    <!-- Card 1 -->
+    <div class="glass p-4 text-sm">
+      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg">🔢 Tier 1: Basic</h4>
+      <p><strong>🛠 Features:</strong> LM35 + ADXL345 + Voltage Monitoring + LEDs + Bluetooth</p>
+      <p><strong>💰 Cost:</strong> ₹430</p>
+      <p><strong>🧰 Waterproofing:</strong> Splashproof box, glue seals, heat shrink</p>
+      <p><strong>🏷️ Selling Price:</strong> ₹899</p>
+      <p><strong>💵 Margin:</strong> ~52%</p>
     </div>
-  </section>
+
+    <!-- Card 2 -->
+    <div class="glass p-4 text-sm">
+      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg">🔢 Tier 2: Standard</h4>
+      <p><strong>🛠 Features:</strong> Tier 1 + App UI + Dashboard + Stronger case</p>
+      <p><strong>💰 Cost:</strong> ₹670</p>
+      <p><strong>🧰 Waterproofing:</strong> Waterproof gaskets, standoffs, epoxy</p>
+      <p><strong>🏷️ Selling Price:</strong> ₹1399</p>
+      <p><strong>💵 Margin:</strong> ~52%</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="glass p-4 text-sm">
+      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg">🔢 Tier 3: Advanced</h4>
+      <p><strong>🛠 Features:</strong> Tier 2 + Rechargeable Battery + USB</p>
+      <p><strong>💰 Cost:</strong> ₹890</p>
+      <p><strong>🧰 Waterproofing:</strong> IP54+ case, conformal coating</p>
+      <p><strong>🏷️ Selling Price:</strong> ₹1799</p>
+      <p><strong>💵 Margin:</strong> ~50%</p>
+    </div>
+  </div>
+</div>
+
 
   <!-- CTA -->
   <div class="text-center py-12" data-aos="fade-up">
