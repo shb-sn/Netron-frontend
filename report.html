@@ -20,11 +20,24 @@
         colors: {
           primary: '#1D4ED8', // Tailwind's blue-700 for headings
           lightbg: '#ebf8ff', // Light blue background
-          darkbg: '#1f2937'   // Gray-800 dark mode
-        }
+          darkbg: '#1f2937',   // Gray-800 dark mode
+          coral: '#FF6F61',
+          sapphire: {
+  300: '#4F7EEB',
+  600: '#0F52BA'
+},
+          carmine: '#960018',
+          citrine: '#E4D00A',
+          charcoal: '#36454F',
+          maroon: '#800000',
+          slateblue: '#6A5ACD',
+          carmine: '#E97451',
+          russet: '#80461B',
+          rosewood: '#65000B',
       }
     }
   }
+}
 </script>
 
   <script>
@@ -140,20 +153,20 @@
 <section class="max-w-5xl mx-auto px-4 grid gap-6 md:grid-cols-2 auto-rows-fr items-stretch">
   <!-- Problem Statement -->
   <div class="p-6 glass h-full flex flex-col justify-between" data-aos="fade-up">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Problem Statement</h3>
-    <p class="text-lg">Two-wheeler breakdowns are common due to overheating, low battery, or high vibrations, especially in remote areas. There is a need for an affordable, real-time monitoring solution for engine health that doesn’t rely on costly OBD systems.</p>
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Problem Statement</h3>
+    <p class="text-base">Two-wheeler breakdowns are common due to overheating, low battery, or high vibrations, especially in remote areas. There is a need for an affordable, real-time monitoring solution for engine health that doesn’t rely on costly OBD systems.</p>
   </div>
 
   <!-- Solution Overview -->
   <div class="p-6 glass h-full flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Solution Overview</h3>
-    <p class="text-lg">NetrOn is a smart health guardian system for two-wheelers using an Arduino-powered module that monitors engine temperature, battery voltage, and vibration levels. Data is transmitted via Bluetooth and visualized on a Flask-based dashboard.</p>
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Solution Overview</h3>
+    <p class="text-base">NetrOn is a smart health guardian system for two-wheelers using an Arduino-powered module that monitors engine temperature, battery voltage, and vibration levels. Data is transmitted via Bluetooth and visualized on a Flask-based dashboard.</p>
   </div>
 
   <!-- Innovation Highlights -->
   <div class="p-6 glass h-full flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Innovation Highlights</h3>
-    <ul class="list-disc ml-5 space-y-1 text-lg">
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Innovation Highlights</h3>
+    <ul class="list-disc ml-5 space-y-1 text-base">
       <li>Low-cost sensor suite (LM35, ADXL345, voltage divider)</li>
       <li>Threshold-based alert system with LEDs</li>
       <li>Bluetooth integration for real-time local display</li>
@@ -163,48 +176,50 @@
 
   <!-- Key Metrics -->
   <div class="p-6 glass h-full flex flex-col justify-between" data-aos="fade-up">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Key Metrics</h3>
-    <div class="space-y-4 text-lg">
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Key Metrics</h3>
+    <div class="space-y-4 text-base">
       <!-- Temperature -->
       <div>
         <p class="text-gray-700 dark:text-gray-200 mb-1">
         <span class="italic font-semibold">Temperature:</span>
-        <span class="text-green-600 dark:text-green-400">Normal: 28–32°C</span>
-        <span class="text-grey-600 dark:text-grey-400 ml-1"> |</span>
-        <span class="text-red-600 dark:text-red-400 ml-1">Alert: &lt;60°C</span></p>
+        <span class="text-green-600 dark:text-green-300">Normal: 28–32°C</span>
+        <span class="text-slate-600 dark:text-slate-400 ml-1"> |</span>
+        <span class="text-red-600 dark:text-red-300 ml-1">Alert: &lt;60°C</span></p>
       </div>
       <!-- Vibration -->
       <div>
         <p class="text-gray-700 dark:text-gray-200 mb-1">
         <span class="italic font-semibold">Vibration:</span>
-        <span class="text-green-600 dark:text-green-400">Normal: 8–9 units</span>
-        <span class="text-grey-600 dark:text-grey-400 ml-1"> |</span>
-        <span class="text-red-600 dark:text-red-400 ml-2">Alert: &lt;30 units</span></p>
+        <span class="text-green-600 dark:text-green-300">Normal: 8–9 units</span>
+        <span class="text-slate-600 dark:text-slate-400 ml-1"> |</span>
+        <span class="text-red-600 dark:text-red-300 ml-2">Alert: &lt;30 units</span></p>
       </div>
       <!-- Voltage -->
       <div>
         <p class="text-gray-700 dark:text-gray-200 mb-1">
           <span class="italic font-semibold">Battery Voltage:</span>
-        <span class="text-green-600 dark:text-green-400">Normal: 7–9V</span>
-        <span class="text-grey-600 dark:text-grey-400 ml-1"> |</span>
-        <span class="text-red-600 dark:text-red-400 ml-2">Alert: &lt;4.5V</span></p>
+        <span class="text-green-600 dark:text-green-300">Normal: 7–9V</span>
+        <span class="text-slate-600 dark:text-slate-400 ml-1"> |</span>
+        <span class="text-red-600 dark:text-red-300 ml-2">Alert: &lt;4.5V</span></p>
       </div>
     </div>
   </div>
 
   <!-- Implementation -->
   <div class="p-6 glass h-full md:col-span-2" data-aos="fade-up" data-aos-delay="400">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Implementation</h3>
-    <p class="text-lg">Built with LM35 (temperature), ADXL345 (vibration), and voltage divider circuit connected to Arduino Uno. Data is processed and sent via HC-05 Bluetooth to a local device. Web dashboard developed using Flask, HTML, and Tailwind CSS.</p>
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Implementation</h3>
+    <p class="text-base">Built with LM35 (temperature), ADXL345 (vibration), and a voltage divider circuit connected to Arduino Uno. Data is processed and sent via HC-05 Bluetooth to a local device. Web dashboard developed using Flask, HTML, and Tailwind CSS.
+    <br>
+    Thresholds in the Arduino code trigger LED alerts for heat, vibration, or low battery. The weatherproof, compact system supports future app alerts and OTA updates.</p>
   </div>
 
   <!-- GitHub & Data Links -->
   <div class="p-6 glass h-full md:col-span-2" data-aos="fade-up" data-aos-delay="500">
-    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-300 mb-4">Data Links</h3>
-    <ul class="list-disc ml-5 space-y-1 text-lg">
-      <li><a class="text-blue-500 underline" href="https://github.com/shb-sn/NetrOn-Smart-vehicle-health-guardian" target="_blank">GitHub Repository</a></li>
-      <li><a href="https://raw.githubusercontent.com/shb-sn/NetrOn-Smart-vehicle-health-guardian/main/data_samples/netron_sensor_data_sample.xlsx" download class="text-blue-500 underline">Download Sample Sensor Data</a></li>
-      <li><a class="text-blue-500 underline" href="/dashboard.html">Live Dashboard</a></li>
+    <h3 class="text-2xl font-bold mb-4" style="color:	#3f0746">Data Links</h3>
+    <ul class="list-disc ml-5 space-y-1 text-base">
+      <li><a class="text-blue-400 underline" href="https://github.com/shb-sn/NetrOn-Smart-vehicle-health-guardian" target="_blank">GitHub Repository</a></li>
+      <li><a href="https://raw.githubusercontent.com/shb-sn/NetrOn-Smart-vehicle-health-guardian/main/data_samples/netron_sensor_data_sample.xlsx" download class="text-blue-400 underline">Download Sample Sensor Data</a></li>
+      <li><a class="text-blue-400 underline" href="/dashboard.html">Live Dashboard</a></li>
     </ul>
   </div>
 </section>
@@ -216,7 +231,7 @@
 
   <!-- Desktop Table -->
   <div class="hidden md:block p-6 glass" data-aos="fade-up">
-    <table class="table-auto w-full text-sm">
+    <table class="table-auto w-full text-base">
       <thead>
         <tr class="bg-blue-200 dark:bg-gray-700">
           <th class="px-4 py-2">Tier</th>
@@ -260,7 +275,7 @@
   <div class="md:hidden space-y-4 mt-4" data-aos="fade-up" data-aos-delay="200">
     <!-- Card 1 -->
     <div class="glass p-4 text-sm">
-      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg mb-1">Tier 1: Basic</h4>
+      <h4 class="text-amber-600 dark:text-amber-200 font-semibold text-lg mb-1">Tier 1: Basic</h4>
       <p><strong>Features:</strong> LM35 + ADXL345 + Voltage Monitoring + LEDs + Bluetooth</p>
       <p><strong>Cost:</strong> ₹430</p>
       <p><strong>Waterproofing:</strong> Splashproof case + sealant</p>
@@ -270,7 +285,7 @@
 
     <!-- Card 2 -->
     <div class="glass p-4 text-sm">
-      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg mb-1">Tier 2: Standard</h4>
+      <h4 class="text-cyan-700 dark:text-cyan-300 font-semibold text-lg mb-1">Tier 2: Standard</h4>
       <p><strong>Features:</strong> Tier 1 + App UI + Web Dashboard</p>
       <p><strong>Cost:</strong> ₹670</p>
       <p><strong>Waterproofing:</strong> Gasket + epoxy sealed project box</p>
@@ -280,7 +295,7 @@
 
     <!-- Card 3 -->
     <div class="glass p-4 text-sm">
-      <h4 class="text-blue-700 dark:text-blue-300 font-semibold text-lg mb-1">Tier 3: Advanced</h4>
+      <h4 class="text-violet-700 dark:text-violet-300 font-semibold text-lg mb-1">Tier 3: Advanced</h4>
       <p><strong>Features:</strong> Tier 2 + Rechargeable Battery + USB + IP54 Enclosure</p>
       <p><strong>Cost:</strong> ₹890</p>
       <p><strong>Waterproofing:</strong> Weatherproof sealed case</p>
